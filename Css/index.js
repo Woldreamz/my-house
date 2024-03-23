@@ -13,4 +13,26 @@ if (close){
     })
 }
 
-satisfies = function
+const toggleList = document.querySelectorAll('.toggleList');
+for (let i = 0; i < toggleList.length; i++) {
+  toggleList[i].addEventListener("click", function(){
+    var list = toggleList[i].parentNode.querySelector('.locationList')
+    if (list.style.display === "none") {
+      list.style.display = "block";
+    }
+    else {
+      list.style.display = "none";
+    }
+  })  
+}
+
+// document.getElementById("toggleList").addEventListener("click", function() {
+//     var list = document.getElementById("locationList");
+//     if (list.style.display === "none") {
+//       list.style.display = "block";
+//     } else {
+//       list.style.display = "none";
+//     }
+//   });
+
+  

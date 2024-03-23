@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="https://i.postimg.cc/xjwDWjgB/woldreamz-inc-favicon-black.png">
     <!-- font Awesome -->
     <script
       src="https://kit.fontawesome.com/e50ef52172.js"
@@ -17,12 +16,12 @@
       rel="stylesheet"
     />
     <!-- css style sheet -->
-    <link rel="stylesheet" href="Css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>House-Hunter</title>
   </head>
   <body>
     <section id="header">
-      <a href="#"
+      <a href="index.html"
         ><img src="img/house hunter logo.png" alt="" width="70" height="70"/></a>
 
       <div>
@@ -31,16 +30,12 @@
           <li><a href="about.html">About Us</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="contact.html">Contact Us</a></li>
-          <div>
-            <ul id="">
-              <li><a href="register.html">Register</a></li>
-              <li>
-                <button class="property-btn" href="property.html">
-                  Add Property
-                </button>
-              </li>
-            </ul>
-          </div>
+          <li><a href="register.html">Register</a></li>
+          <li>
+            <button class="property-btn" href="property.html">
+              Add Property
+            </button>
+          </li>
           <a href=""id="close"><i class="fas fa-times"></i></a>
 
         </ul>
@@ -48,7 +43,7 @@
       
       <div class="mobile">
         <i id="bar" class="fas fa-outdent"></i>
-    </div>
+      </div>
     </section>
 
     <section id="hero" style="background-image: url('img/velpha/hero-img.png');">
@@ -86,7 +81,7 @@
               <h5>Location</h5>
               <p>Choose Location</p>
             </div>
-            <svg
+            <svg class="toggleList"
               width="11"
               height="7"
               viewBox="0 0 11 7"
@@ -98,6 +93,13 @@
                 fill="#70C010"
               />
             </svg>
+            <ul class="locationList list" style="display: none;">
+              <li data-value="" class="option" style="text-align: center;">Location</li>
+              <li data-value="Lagos" class="option">Lagos</li>
+              <li data-value="Port Harcourt" class="option">Port Harcourt</li>
+              <li data-value="Abuja" class="option">Abuja</li>
+              <li data-value="Kogi" class="option">Kogi</li>
+            </ul>
           </div>
           <div class="form-body_inner">
             <svg
@@ -112,12 +114,11 @@
                 fill="#70C010"
               />
             </svg>
-
             <div class="text">
               <h5>Property Type</h5>
               <p>Choose Location</p>
             </div>
-            <svg
+            <svg class="toggleList"
               width="11"
               height="7"
               viewBox="0 0 11 7"
@@ -129,6 +130,13 @@
                 fill="#70C010"
               />
             </svg>
+            <ul class="locationList list" style="display: none;">
+              <li data-value="" class="option" style="text-align: center;">Location</li>
+              <li data-value="Lagos" class="option">Lagos</li>
+              <li data-value="Port Harcourt" class="option">Port Harcourt</li>
+              <li data-value="Abuja" class="option">Abuja</li>
+              <li data-value="Kogi" class="option">Kogi</li>
+            </ul>
           </div>
           <div class="form-body_inner">
             <svg
@@ -256,7 +264,7 @@
         </button>
       </div>
       <div class="pro-container">
-        <div class="pro">
+        <div class="pro" onclick="window.location.href='house.html';">
           <img src="img/velpha/rent1.png" alt="">
           <div class="description">
             <div class="descr">
@@ -310,7 +318,7 @@
             </div>
             <div class="des">
               <h4>&#x20A6;200,000 / year</h4>
-              <button class="gold property-btn" href="property.html">
+              <button class="gold property-btn" href="house.html">
                 See More
               </button>
             </div>
@@ -371,7 +379,7 @@
             </div>
             <div class="des">
               <h4>&#x20A6;700,000 / year</h4>
-              <button class="gold property-btn" href="property.html">
+              <button class="gold property-btn" href="house.html">
                 See More
               </button>
             </div>
@@ -432,7 +440,7 @@
             </div>
             <div class="des">
               <h4>&#x20A6;3.5M / year</h4>
-              <button class="gold property-btn" href="property.html">
+              <button class="gold property-btn" href="house.html">
                 See More
               </button>
             </div>
@@ -493,7 +501,7 @@
                 </p>
               </div>
               <div class="profile-about">
-                <p>I am so glad that I stumbled across  Househunter website. I can’t say enough about how professional and super easy it was looking for an apartment through them. </p>
+                <p>I am so glad that I stumbled across  Househunter websute. I can’t say enough about how professional and stressful it was looking for an apartment through them. </p>
               </div>
               <div class="stars">
                 <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -624,6 +632,6 @@
         
     </footer>
 
-    <script src="Css/index.js"></script>
+    <script src="css/index.js"></script>
   </body>
 </html>
